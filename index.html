@@ -5,55 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
-            background-color: #0c0c0c;
-            color: #d4d4d4;
-            font-family: monospace;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            background-color: #111111;
+            color: #a1a1aa;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #f4f4f5;
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+            font-size: 14px;
         }
         a {
-            color: #58a6ff;
+            color: #a1a1aa;
             text-decoration: none;
+            transition: color 0.2s ease;
         }
         a:hover {
+            color: #f4f4f5;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #f4f4f5;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        .project {
+            margin-bottom: 24px;
+        }
+        .project h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .project h3 a {
+            color: #e4e4e7;
+        }
+        .project h3 a:hover {
             text-decoration: underline;
         }
-        h1, h2 {
-            color: #00ff00;
+        .project p {
+            font-size: 14px;
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+        footer {
+            margin-top: 80px;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>João Manoel</h1>
+            <p class="subtitle">Cybersecurity / Software Engineering</p>
+        </header>
 
-    <header>
-        <h1>João Manoel</h1>
-        <p>Cybersecurity | Software Engineering</p>
-    </header>
+        <nav>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">E-mail</a>
+        </nav>
 
-    <main>
-        <section>
-            <h2>> Sobre</h2>
-            <p>Seu texto descritivo aqui.</p>
-        </section>
+        <main>
+            <section>
+                <h2>Sobre</h2>
+                <p>Em atualização</p>
+            </section>
 
-        <section>
-            <h2>> Projetos</h2>
-            <ul>
-                <li><a href="#">A preencher</a> - Descrição</li>
-                <li><a href="#">A preencher</a> - Descrição</li>
-            </ul>
-        </section>
+            <section>
+                <h2>Projetos</h2>
+                <div class="project">
+                    <h3><a href="#">Projeto</a></h3>
+                    <p>Descrição.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="#">Projeto 2</a></h3>
+                    <p>Descrição..</p>
+                </div>
+            </section>
+        </main>
 
-        <section>
-            <h2>> Contato</h2>
-            <ul>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </section>
-    </main>
-
+        <footer>
+            <p>2026</p>
+        </footer>
+    </div>
 </body>
 </html>
